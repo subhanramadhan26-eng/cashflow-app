@@ -72,6 +72,6 @@ if st.button("Generate Simulasi 30 Hari"):
   st.dataframe(df, use_container_width=True)
 
   # Tampilkan Grafik Pengeluaran per Kategori
-  st.sub_header("Grafik Pengeluaran Berdasarkan Kategori")
+  st.subheader("Grafik Pengeluaran Berdasarkan Kategori")
   chart_data = df.groupby("Kategori")["Nominal"].sum()
   st.bar_chart(chart_data)
